@@ -19,10 +19,7 @@ class ViewFilter extends React.Component {
             <i className="fa fa-table mr-2"></i>
             Grid
           </button>
-          <button onClick={ () => this.changeSelected('list') } className={ classNames({ active: this.props.selectedViewType === 'list' }) }>
-            <i className="fa fa-list mr-2"></i>
-            List
-          </button>
+         
         </div>
       </div>
     );

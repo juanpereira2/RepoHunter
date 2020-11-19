@@ -6,8 +6,8 @@ import OptionsContainer from '../containers/options';
 
 const AppRoutes = () => {
   return (
-    // @todo use browser router and generate prerendered options.html page for chrome extension
-    <MemoryRouter>
+
+<MemoryRouter>
       <Switch>
         <Route exact path='/' component={ FeedContainer }/>
         <Route exact path='/options' component={ OptionsContainer }/>

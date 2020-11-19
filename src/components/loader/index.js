@@ -1,11 +1,11 @@
 import React from 'react';
 
 import './styles.css';
-import Solar from '../icons/solar';
+import Star from '../icons/star';
 
 const Loader = () => (
   <div className="loading-indicator">
-    <Solar className='fa-spin'/>
+    <Star className='fa-spin'/>
   </div>
 );
 

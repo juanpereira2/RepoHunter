@@ -10,7 +10,6 @@ import TopNav from '../../components/top-nav';
 import Filters from '../../components/filters';
 import GroupHeading from '../../components/group-heading';
 import { fetchTrending } from '../../redux/github/actions';
-import RepositoryList from '../../components/repository-list';
 import RepositoryGrid from '../../components/repository-grid';
 import { updateDateJump, updateLanguage, updateViewType } from '../../redux/preference/actions';
 
@@ -74,17 +73,7 @@ class FeedContainer extends React.Component {
     return dateRange;
   }
 
-  renderTokenWarning() {
-    return !this.props.preference.options.token && (
-      <Alert type='warning'>
-        Make sure to
-        <strong className='ml-1 mr-1'>
-          <Link to='/options'>add a token</Link>
-        </strong>
-        to avoid hitting the rate limit
-      </Alert>
-    );
-  }
+  
 
   renderErrors() {
     if (!this.props.github.error) {
@@ -116,13 +105,13 @@ class FeedContainer extends React.Component {
   }
 
   renderAlerts() {
-    const tokenWarning = this.renderTokenWarning();
+    //const tokenWarning = this.renderTokenWarning();
     const error = this.renderErrors();
 
-    if (tokenWarning || error) {
+    if ( error) {
       return (
         <div className="alert-group">
-          { tokenWarning }
+         
           { error }
         </div>
       );
@@ -139,10 +128,7 @@ class FeedContainer extends React.Component {
       />;
     }
 
-    return <RepositoryList
-      repositories={ this.props.github.repositories || [] }
-      dateJump={ this.props.preference.dateJump }
-    />;
+    
   }
 
   hasRepositories() {

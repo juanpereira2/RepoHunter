@@ -24,12 +24,10 @@
 .top-nav .logo-text h4 {
   margin: 3px 0 0;
   font-weight: 700;
-  color: #2d2d2d;
+  color: #000000;
 }
 
-.top-nav .logo-text p {
-  margin-bottom: 0;
-}
+
 
 .top-nav .external-btns .btn {
   margin-left: 10px;
@@ -37,8 +35,5 @@
   box-shadow: none;
 }
 
-.btn-tweet {
-  background: #01aced;
-  border-color: #01aced;
-}
+
 
