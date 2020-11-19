@@ -121,12 +121,11 @@ class FeedContainer extends React.Component {
   }
 
   renderRepositoriesList() {
-    if (this.props.preference.viewType === 'grid') {
       return <RepositoryGrid
         repositories={ this.props.github.repositories || [] }
         dateJump={ this.props.preference.dateJump }
       />;
-    }
+    
 
     
   }
