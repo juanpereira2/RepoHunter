@@ -2,10 +2,11 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## RepoHunter
 
-In the project directory, you can run:
-
+project to search repositories within github according to the number of stars.
+### `npm install`
+to install all dependencies
 ### `npm start`
 
 Runs the app in the development mode.\
